@@ -1,0 +1,14 @@
+apiVersion: v1 
+kind: Service 
+metedata: 
+  name: comingsoon-image
+  namespace: commingsoon
+spec: 
+  selector: 
+    app: triple3a/comingsoon-page
+  type: NodePort
+  ports: 
+    - protocol: TCP
+    port: 80
+    targetPort: 80 
+
